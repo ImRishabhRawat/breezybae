@@ -2389,7 +2389,9 @@ body.visible-sidebar {
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
-	border-radius: 500px;
+	border-radius: 50%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
 }
 
 .offer-block-two .inner-box:hover .image img {
@@ -2429,6 +2431,7 @@ body.visible-sidebar {
 	font-size: 16px;
 	color: var(--main-color);
 }
+
 
 .special-offer .lower-link-box {
 	margin-top: 40px;

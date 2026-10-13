@@ -126,7 +126,7 @@
 												<a href="index.html">Home</a>
 											</li>
 											<li><a href="about.html">About Us</a></li>
-											<li><a href="our-chef.html">Team Members</a></li>
+											
 											<li><a href="menu-list.html">Our Menu</a></li>
 											<li><a href="privacy-policy.html">Privacy Policy</a></li>
 											<li><a href="contact-us.html">Contact Us</a></li>
@@ -183,7 +183,7 @@
 								<a href="index.html">Home</a>
 							</li>
 							<li><a href="about.html">About Us</a></li>
-							<li><a href="our-chef.html">Team Members</a></li>
+							
 							<li><a href="menu-list.html">Our Menu</a></li>
 							<li><a href="privacy-policy.html">Privacy Policy</a></li>
 							<li><a href="contact-us.html">Contact Us</a></li>
@@ -267,6 +267,58 @@
 			<!--End Banner Section -->
 
 			<!--Menu Section-->
+			<style>
+				/* Scoped styles: card-like background for menu images, no hover effects */
+				.menu-image-style-section .menu-images-gallery {
+					display: grid;
+					grid-template-columns: repeat(2, minmax(260px, 1fr));
+					gap: 24px;
+				}
+
+				.menu-image-style-section .menu-image-item {
+					background: #ffffff;
+					padding: 16px;
+					border-radius: 12px;
+					box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+					border: 1px solid rgba(0, 0, 0, 0.06);
+					width: 100%;
+					height: auto;
+					display: block;
+					transition: none !important;
+				}
+
+				/* Disable any global hover animations/effects */
+				.menu-image-style-section .menu-image-item:hover,
+				.menu-image-style-section .menu-image-item:focus {
+					transform: none !important;
+					filter: none !important;
+					opacity: 1 !important;
+					box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
+				}
+
+				/* Responsive adjustments */
+				@media (max-width: 991px) {
+					.menu-image-style-section .menu-images-gallery {
+						grid-template-columns: repeat(2, minmax(200px, 1fr));
+						gap: 16px;
+					}
+					.menu-image-style-section .menu-image-item {
+						padding: 14px;
+						border-radius: 10px;
+					}
+				}
+
+				@media (max-width: 640px) {
+					.menu-image-style-section .menu-images-gallery {
+						grid-template-columns: 1fr;
+						gap: 14px;
+					}
+					.menu-image-style-section .menu-image-item {
+						padding: 12px;
+						border-radius: 8px;
+					}
+				}
+			</style>
 			<section class="menu-image-style-section menu-clean section-kt">
 				<div class="auto-container">
 					<div class="menu-image-main">
